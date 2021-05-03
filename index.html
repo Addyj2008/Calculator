@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <link type = "text/css" rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <span id = "output"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="remove(true)">
+                        C
+                    </button>
+                </td>
+                <td>
+                    <button onclick="remove(false)">
+                        BACKSPACE
+                    </button>
+                </td>
+                <td>
+                    <button onclick="square()">
+                        SQUARE
+                    </button>
+                </td>
+                <td>
+                    <button onclick = "handleClick('/')">
+                        /
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick = "handleClick(7)" class = "number">
+                        7
+                    </button>
+                </td>
+                <td>
+                    <button onclick = "handleClick(8)"class = "number">
+                        8
+                    </button>
+                </td>
+                <td>
+                    <button onclick = "handleClick(9)"class = "number">
+                        9
+                    </button>
+                </td>
+                <td>
+                    <button onclick = "handleClick('*')">
+                        *
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick = "handleClick(4)"class = "number">
+                        4
+                    </button>
+                </td>
+                <td>
+                    <button onclick = "handleClick(5)"class = "number">
+                        5
+                    </button>
+                </td>
+                <td>
+                    <button onclick = "handleClick(6)"class = "number">
+                        6
+                    </button>
+                </td>
+                <td>
+                    <button onclick = "handleClick('-')">
+                        -
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick = "handleClick(1)">
+                        1
+                    </button>
+                </td>
+                <td>
+                    <button onclick = "handleClick(2)">
+                        2
+                    </button>
+                </td>
+                <td>
+                    <button onclick = "handleClick(3)">
+                        3
+                    </button>
+                </td>
+                <td>
+                    <button onclick = "handleClick('+')">
+                        +
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button style="width: 200px;" onclick = "handleClick(0)">
+                        0
+                    </button>
+                </td>
+                <td>
+                    <button onclick="handleClick('.')">
+                        .
+                    </button>
+                </td>
+                <td>
+                    <button onclick="calculate()">
+                        =
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <script src="main.js"></script>
+    </body>
+</html>
